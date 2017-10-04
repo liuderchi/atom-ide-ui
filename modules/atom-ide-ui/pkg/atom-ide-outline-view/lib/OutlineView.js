@@ -439,4 +439,8 @@ const OUTLINE_KIND_TO_ICON = {
   property: 'type-property',
   string: 'type-string',
   variable: 'type-variable',
+  markup: 'code',  // icon-type-foo -> icon-code  (\f05f of https://github.com/atom/atom/blob/master/static/variables/octicon-utf-codes.less, https://octicons.github.com/icon/code/)
+  // NOTE workaround in ide-html
+  // did outlineView rendered do
+  // document.querySelectorAll('.outline-view li .list-item span.icon').forEach(el => el.classList.add('icon-code'))
 };
